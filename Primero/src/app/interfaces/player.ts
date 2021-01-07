@@ -6,7 +6,7 @@ export interface Player {
   position: SquadNumber;
   weight: number;
   height: number;
-  nationality: Country;
+  nationality: Countries;
   leftFooted: boolean;
 }
 
@@ -23,7 +23,7 @@ export enum SquadNumber {
   leftWinger = 11,
 }
 
-export enum Country {
+export enum Countries {
     Afghanistan = 'AF',
     AlandIslands = 'AX',
     Albania = 'AL',
