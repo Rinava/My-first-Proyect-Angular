@@ -1,0 +1,26 @@
+{
+  "name": "my-first-proyect-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rinava/My-first-Proyect-Angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rinava/My-first-Proyect-Angular/issues"
+  },
+  "homepage": "https://github.com/Rinava/My-first-Proyect-Angular#readme",
+  "dependencies": {
+    "@angular/core": "^11.0.6",
+    "@angular/fire": "^6.1.4",
+    "@angular/platform-browser": "^11.0.6",
+    "angularfire2": "^5.4.2",
+    "firebase": "^8.2.1"
+  }
+}
