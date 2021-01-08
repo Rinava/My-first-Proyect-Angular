@@ -15,13 +15,13 @@ export class PlayerService {
       ref.orderByChild('name')
     );
   }
-  /*getPlayers(): Observable<Player[]> {
+  getPlayers(): Observable<Player[]> {
     return this.PlayersDb.snapshotChanges().pipe(
       map((changes) => {
-        return changes.map((c) => ({ $key: c.key, ...c.payload.val() }))
+        return changes.map((c) => ({ $key: c.key, ... c.payload.val() } as Player))
       })
     )
-  }  */ //tira error el codigo de Platzi
+  }   //tira error el codigo de Platzi
   addPlayers(player:Player){
     return this.PlayersDb.push(player)
   }
