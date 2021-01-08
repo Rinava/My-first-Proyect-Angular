@@ -4,5 +4,5 @@ export interface Team{
     $key ?:string;
     name:string;
     country:Countries;
-    players:Player[];
+    players:Player[]|null; //agregue la posibilidad de ser null porque sino tiraba error en teamtablecomponent.ts
 }

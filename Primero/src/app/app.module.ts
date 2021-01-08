@@ -8,10 +8,12 @@ import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { PlayerService } from './interfaces/services/player.service';
 import { TeamService } from './interfaces/services/team.service';
+import { TeamTableComponent } from './team-table/team-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamTableComponent
   ],
   imports: [
     BrowserModule,
