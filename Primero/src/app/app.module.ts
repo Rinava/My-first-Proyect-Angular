@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { PlayerService } from './interfaces/services/player.service';
+import { TeamService } from './interfaces/services/team.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
-  providers: [PlayerService],
+  providers: [PlayerService, TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
